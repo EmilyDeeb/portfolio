@@ -1,0 +1,465 @@
+{
+  "designer": {
+    "name": "Nadia Cabrera Salazar",
+    "title": "Spatial Data Scientist",
+    "tagline": "Working at the intersection of urban systems, infrastructure and evidence-based planning.ranslating data into how cities get planned, funded and built.",
+    "location": "London",
+    "email": "nadia.salazar.25@ucl.ac.uk",
+    "linkedin": "https://linkedin.com/in/nadiacabreras",
+    "github": "https://github.com/NadiaCabreraS",
+    "cv_url": ""
+  },
+
+  "about": {
+    "openToWork": true,
+    "positioning": "I'm a spatial data scientist and urban planner passionate about understanding how cities work through data.",
+    "prose": [
+
+      "Over the past few years, I've worked across urban planning, climate resilience and international development, helping governments and organisations turn complex spatial data into evidence that supports better decisions. From analysing river basin risks in the Peruvian Andes to supporting cultural heritage and urban projects at the Inter-American Development Bank, my work has always sat at the intersection of geography, technology and public policy.",
+      "Today I'm completing an MSc in Urban Spatial Science at UCL CASA, where I've specialised in GIS, machine learning, geospatial analytics and urban modelling. My dissertation, developed in collaboration with Transport for London, explores London's functional polycentricity through millions of public transport journeys, combining spatial analysis with network science to better understand how cities actually function.",
+      "What drives me is transforming complex spatial data into clear insights, interactive tools and analytical products that help people make better decisions. Whether through maps, machine learning models or web-based applications, I enjoy building solutions that connect data with real-world urban challenges."
+    ],
+    "human": "When I'm away from my laptop, I'm usually running trails, planning my next hiking trip, or baking something from home. I enjoy books, beautiful maps, and cities that are best explored by walking.",
+    "facts": [
+      { "label": "based", "value": "London" },
+      { "label": "focus", "value": "Spatial Data Scientist" },
+      { "label": "languages", "value": "English, Spanish" }
+    ],
+    "contactInvite": "I'm always happy to talk about cities, geospatial data, transport, and how spatial analysis can support better decisions. Whether you have a project in mind, an opportunity, or simply want to connect, I'd love to hear from you."
+  },
+
+  "projects": [
+
+    {
+      "id": "access-opportunity",
+      "title": "Access Without Opportunity",
+      "subtitle": "Public Transport Accessibility and Unemployment Across English LSOAs",
+      "category": "data",
+      "tags": ["Machine learning", "SHAP", "Spatial analysis"],
+      "tools": ["Python", "XGBoost", "SHAP", "GeoPandas", "scikit-learn"],
+      "year": "2026",
+      "location": "England, UK",
+      "role": "Researcher · MSc module project",
+      "institution": "CASA, UCL",
+      "featured": false,
+      "external_url": "",
+      "github_url": "https://github.com/NadiaCabreraS/Assessment_DSSS",
+
+      "hero_image": "projects/access-opportunity/hero.png",
+      "images_inline": true,
+      "images": [
+        { "file": "projects/access-opportunity/01.png", "caption": "Unemployment rate distribution, PT vs unemployment scatter, and unemployment by region across 31,810 English LSOAs." },
+        { "file": "projects/access-opportunity/02.png", "caption": "Side-by-side choropleths: unemployment rate and PT job accessibility (60-minute threshold) by LSOA across England." },
+        { "file": "projects/access-opportunity/03.png", "caption": "SHAP beeswarm plot: car deprivation dominates prediction; PT accessibility ranks 22nd of 27 predictors." },
+        { "file": "projects/access-opportunity/04.png", "caption": "SHAP interaction plot: PT accessibility has a marginal positive effect only in car-deprived neighbourhoods; the effect approaches zero where car ownership is high" },
+        { "file": "projects/access-opportunity/05.png", "caption": "Structural conditions across four PT/unemployment quadrants. Groups A and B share the same PT level but diverge entirely on deprivation indicators." }
+      ],
+
+      "overview": "Using machine learning and accessibility indicators for 31,810 Lower Super Output Areas in England, Access Without Opportunity evaluates the extent to which public transport access predicts unemployment. The analysis also highlights where other socioeconomic factors outweigh accessibility in explaining employment outcomes.",
+
+      "body": [
+        {
+          "heading": "The problem",
+          "text": "England's transport investment is often justified as a way to reduce regional inequality by improving access to employment. This project examines whether public transport accessibility is associated with lower unemployment across 31,810 Lower Super Output Areas in England.",
+          "image": 0
+        },
+        {
+          "heading": "Correlation is misleading",
+          "text": "At first glance, neighbourhoods with better public transport tend to have higher, not lower, unemployment. The spatial distribution of both variables suggests that accessibility and deprivation concentrate in the same urban areas, making simple correlations difficult to interpret.",
+          "image": 1,
+          "text2": "To account for these structural differences, an XGBoost model was trained using 27 demographic, socioeconomic and transport variables derived from the 2021 Census, the Index of Multiple Deprivation and national accessibility datasets. The model explains 82% of the variation in unemployment across English neighbourhoods.",
+          "image2": 2
+        },
+        {
+          "heading": "What drives unemployment?",
+          "text": "SHAP analysis shows that car deprivation, overcrowding and economic inactivity are the strongest predictors of unemployment. Public transport accessibility ranks 22nd of 27 variables, indicating that its contribution is statistically detectable but comparatively small once broader socioeconomic conditions are considered.",
+          "text2": "The interaction analysis reveals that accessibility has a measurable effect only in neighbourhoods with low levels of car ownership. Where private vehicles are widely available, additional public transport accessibility contributes little to explaining unemployment.",
+          "image2": 3
+        },
+        {
+          "heading": "Implications",
+          "text": "Comparing neighbourhoods with similar transport accessibility but contrasting unemployment levels shows that structural disadvantage—not accessibility—accounts for most of the difference. Areas with high unemployment experience substantially higher levels of car deprivation, overcrowding and social renting despite having comparable public transport provision. These findings suggest that improving accessibility alone is unlikely to reduce unemployment without complementary investment in housing, education and labour market policies.",
+          "image": 4
+        }
+      ],
+
+      "metrics": [
+        { "value": "31,810", "label": "LSOAs analysed" },
+        { "value": "R² 0.82", "label": "XGBoost test score" },
+        { "value": "27", "label": "predictors" }
+      ]
+    },
+
+    {
+      "id": "food-shock",
+      "title": "Food Shock: Modelling Global Supply Chain Vulnerability",
+      "subtitle": "An interactive map of global food supply chain fragility — trade flows, price shocks and import dependency across 180+ countries.",
+      "category": "data",
+      "tags": ["Interactive web", "Data visualisation", "Supply chains"],
+      "tools": ["JavaScript", "React", "Vite", "Leaflet", "FAO data"],
+      "year": "2026",
+      "location": "Global",
+      "role": "Developer & designer",
+      "team": "Emily Deeb, Jie Liu",
+      "institution": "CASA, UCL",
+      "featured": true,
+      "external_url": "https://emilydeeb.github.io/Group_Project_0028/",
+      "github_url": "https://github.com/EmilyDeeb/Group_Project_0028",
+      "github_note": "collaborative project",
+
+      "hero_image": "projects/food-shock/hero.png",
+      "images": [
+        { "file": "projects/food-shock/0.jpg", "caption": "Global maritime and land trade flows across 180+ countries, filtered by food category. Each line connects an origin port to a destination country; line weight reflects trade volume." },
+        { "file": "projects/food-shock/1.png", "caption": "Country-level supply panel showing exports, imports, production and domestic consumption alongside top maritime import origins. The nutrition tab benchmarks per-capita dietary supply against world averages." },
+        { "file": "projects/food-shock/2.png", "caption": "FAO Food Price Index timeline from 1990 to 2026, with annotated crisis events. Each highlighted band is clickable and links the map to that disruption period." },
+        { "file": "projects/food-shock/3.png", "caption": "Strait of Hormuz disruption view showing blocked trade corridors, affected flow exposure by country, and linked news sources contextualising the geopolitical event." }
+      ],
+
+      "overview": "Food Shock is an interactive web application that maps the fragility of global food supply chains: visualising maritime trade flows, price shocks and import dependency across 180+ countries and 82 food commodities. Built on FAO trade data and the Global Food Twin dataset from Harvard, the tool translates abstract supply chain disruptions into a spatial story users can navigate.",
+      "body": [
+        {
+          "heading": "The problem",
+          "text": "Global food systems are among the most critical yet least visible infrastructures shaping everyday life. The disruption of Black Sea grain exports following Russia's invasion of Ukraine in 2022 exposed how deeply countries depend on international trade, yet few tools allowed people to understand that vulnerability at a national level. The information existed across FAO datasets, academic research and news reporting, but remained fragmented and difficult to explore."
+        },
+        {
+          "heading": "Approach",
+          "text": "Food Shock transforms fragmented datasets into an interactive narrative. Rather than presenting a static dashboard, it guides users through major food system disruptions—from the 2008 global food crisis to the Red Sea shipping disruptions—showing how geopolitical events reshape trade flows and food prices. Selecting a country reveals its import dependencies by commodity, major trading partners, and a nutrition profile comparing per-capita dietary supply with global averages."
+        },
+        {
+          "heading": "Insights and limitations",
+          "text": "The project makes global food dependency easier to understand, but it also highlights the limits of the available data. FAO trade statistics describe formal international exchanges at the national scale; they cannot capture food access, hunger, affordability, or the informal trade networks that sustain millions of people. A country may appear food secure in trade statistics while significant parts of its population remain vulnerable. Food Shock reveals the structure of the system, not the lived experience of food insecurity."
+        }
+      ],
+
+      "metrics": [
+        { "value": "180+", "label": "countries covered" },
+        { "value": "36", "label": "years of data" },
+        { "value": "7", "label": "food categories" }
+      ]
+    },
+
+    {
+      "id": "hidrogeomorfologico",
+      "loading_label": "Hydro Study",
+      "title": "Hydrogeomorphological Study of the Río Rímac",
+      "subtitle": "Strategies and Guidelines for Urban River Intervention",
+      "category": "urban-design",
+      "tags": ["Research", "Modelling", "Nature-based solutions"],
+      "tools": ["GIS", "AutoCAD"],
+      "year": "2021",
+      "location": "Historic Centre of Lima",
+      "role": "Project coordinator",
+      "team": "Susana López, Pedro Mendoza, Hans Sierra, Fiorella Guillén",
+      "client": "Municipalidad Metropolitana de Lima",
+      "featured": false,
+      "external_url": "",
+      "github_url": "",
+
+      "hero_image": "projects/hidrogeomorfologico/hero.png",
+      "images_inline": true,
+      "images": [
+        { "file": "projects/hidrogeomorfologico/0.jpg", "caption": "Ecological cross-section of the proposed riparian corridor showing biodiversity strata, aquifer recharge zones and ecosystem services across the river edge." },
+        { "file": "projects/hidrogeomorfologico/2.jpg", "caption": "Hydraulic model across 6 river reaches: erosion levels, flow velocity, flood extent and current conditions from Puente Huáscar to Avenida Tacna." },
+        { "file": "projects/hidrogeomorfologico/1.png", "caption": "Diagram illustrating the ecosystem services of the riparian edge intervention — carbon storage, slope stabilization, phytoremediation, and habitat renaturalization." },
+        { "file": "projects/hidrogeomorfologico/Strategy1.png", "caption": "Flood plain extent along the Historic Centre riverfront." },
+        { "file": "projects/hidrogeomorfologico/Strategy2.png", "caption": "Riverbank concessions and intervention units by reach." },
+        { "file": "projects/hidrogeomorfologico/Strategy3.png", "caption": "Flow velocity mapping across the channel." },
+        { "file": "projects/hidrogeomorfologico/Strategy4.png", "caption": "River width analysis by reach." }
+      ],
+
+      "overview": "The Hydrogeomorphological Study of the Río Rímac establishes the technical and ecological framework for all landscape interventions along the 4-kilometre stretch of the river through Lima's Historic Centre. Developed as a foundational instrument for the Proyecto Especial Paisajístico Río Rímac, the study combines hydraulic modelling, geomorphological analysis and Nature-based Solutions to define intervention guidelines for riverbank stabilisation, flood control, channel management and ecological restoration. The study received formal approval from Peru's National Water Authority (ANA) and the Ministry of Culture (MINCUL), and is being incorporated into Lima's Historic Centre Master Plan.",
+
+      "body": [
+        {
+          "heading": "Diagnosis",
+          "text": "Landscape interventions required a detailed understanding of the river's physical processes before design decisions could be made. Decades of channel modification, informal occupation and hard engineering had altered riverbank stability, disrupted ecological functions and increased flood risk throughout the Historic Centre.",
+          "text2": "Hydraulic modelling across six river reaches evaluated flow velocity, erosion, flood extent and riverbank conditions. Together, these analyses established the hydraulic behaviour and risk profile of each section, providing the evidence base for subsequent intervention strategies.",
+          "imageGrid": [3, 4, 5, 6]
+        },
+        {
+          "heading": "Intervention Framework",
+          "text": "The study translates hydraulic and geomorphological analysis into a site-specific intervention framework. Based on Nature-based Solutions and bioengineering principles, it defines five categories of intervention: riverbank stabilisation, channel management, upgrades to existing retaining structures, flood mitigation measures and phytoremediation. Each strategy is assigned according to the environmental conditions identified during the diagnostic phase.",
+          "image": 0,
+          "text2": "The proposed riparian section integrates these interventions into a single ecological system. Riparian vegetation, slope stabilisation and groundwater recharge are designed to work together to reduce erosion, improve habitat quality and strengthen the river's ecological resilience while respecting the cultural significance of the Historic Centre.",
+          "image2pre": 2,
+          "image2": 1
+        }
+
+      ],
+
+      "metrics": [
+        { "value": "4 km", "label": "river stretch" },
+        { "value": "5", "label": "main intervention strategies" },
+        { "value": "2", "label": "regulatory approvals" }
+      ]
+    },
+
+    {
+      "id": "rio-rimac",
+      "title": "River Rimac Landscape Project",
+      "subtitle": "Ecological Corridor for Lima's Historic Centre",
+      "category": "urban-design",
+      "tags": ["Landscape urbanism", "Urban regeneration", "Ecological corridor"],
+      "tools": ["AutoCAD", "Rhino", "GIS", "Adobe Suite"],
+      "year": "2021–2023",
+      "location": "Historic Centre of Lima",
+      "role": "Project coordinator",
+      "team": "Susana López, Pedro Mendoza, Priscilla Cruz, Karen Canaza, Fiorella Guillén, Adriana Rojas, Mariana Levau",
+      "client": "Metropolitan Municipality of Lima",
+      "featured": true,
+      "external_url": "",
+      "github_url": "",
+
+      "hero_image": "projects/rio-rimac/hero.png",
+      "images_inline": true,
+      "images": [
+        { "file": "projects/rio-rimac/0.jpg", "caption": "Detailed master plan of the Historic Centre stretch showing the 16 heritage landmarks integrated into the intervention." },
+        { "file": "projects/rio-rimac/1.jpg", "caption": "Zoning and strategy map showing ecological zones, green corridors, archaeological sites and public recreation areas." },
+        { "file": "projects/rio-rimac/2.jpg", "caption": "Aerial render showing current conditions along the Historic Centre riverfront." },
+        { "file": "projects/rio-rimac/3.jpg", "caption": "Proposed riverfront with riparian vegetation, pedestrian infrastructure and recovered urban landscape." },
+        { "file": "projects/rio-rimac/4.jpg", "caption": "Master plan: 172 hectares and 66 interventions across 4 kilometres of the Rímac riverfront." },
+        { "file": "projects/rio-rimac/Strategies.jpg", "caption": "Strategies for the project: risk mitigation, sustainable mobility, renaturalisation, public space activatio" }
+      ],
+
+      "overview": "The Río Rímac Landscape Project reimagines Lima's historic river as an ecological corridor and public spine for the city's Historic Centre. Commissioned by the Municipalidad Metropolitana de Lima with financing from CAF and the Inter-American Development Bank, the project covers 172 hectares and 4 kilometres of degraded riverfront, proposing 66 interventions — from riverbank bioengineering and riparian reforestation to public plazas, active mobility networks and archaeological heritage recovery. As project coordinator, I led the technical and institutional delivery across a multidisciplinary team, managing alignment between municipal, national and international partners throughout the full project lifecycle.",
+
+      "body": [
+        {
+          "heading": "Context",
+          "text": "The Río Rímac runs through the heart of Lima — yet for decades it has been treated as infrastructure rather than landscape. Urban growth has fragmented its banks, eroded biodiversity, and severed the river from the 10 million residents of Greater Lima. The historic centre, home to UNESCO World Heritage sites and one of the densest urban fabrics in South America, sits directly along its edge with almost no green space: 3.7m² of green area per inhabitant against a WHO recommendation of 9m².",
+          "text2": "The Proyecto Especial Paisajístico Río Rímac is the largest urban-landscape intervention in Lima in decades. Commissioned by the Municipalidad Metropolitana de Lima with financing from CAF and the Inter-American Development Bank, the project covers 172 hectares and 4 kilometres of riverfront across 10 districts, proposing 66 interventions to restore the Rímac as an ecological corridor and public spine for the Historic Centre.",
+          "image2": 1
+        },
+        {
+          "heading": "Strategy",
+          "text": "The project is structured around four interconnected strategies, each addressing a dimension of the river's degradation.",
+          "text2": "Risk mitigation stabilises eroded riverbanks and recovers flood-prone areas through riparian reforestation and bioengineering. Sustainable mobility reconnects the river corridor to the city through 486 kilometres of proposed green corridors and active transport infrastructure. Renaturalisation restores the hydrological and ecological functions of the river — recovering 3 historic canals, planting 31.2 hectares of riparian forest, and establishing phytoremediation zones along 1,454 metres of riverbank. Public space activation transforms the river edge into a network of accessible parks, plazas and panoramic viewpoints anchored in the archaeological and cultural heritage of the Historic Centre.",
+          "image2": 5
+        },
+        {
+          "heading": "Scale",
+          "text": "As project coordinator, I led the technical and institutional coordination across a multidisciplinary team of landscape architects, urban planners and engineers, managing the delivery pipeline across 66 interventions of varying scale and complexity. The project was structured following INVIERTE.PE investment criteria and required continuous alignment between municipal, national and international financing partners.",
+          "text2": "The 4-kilometre stretch through the Historic Centre is designed as a replicable model for the remaining 27 kilometres of the historic Rímac — positioning urban rivers as opportunity corridors that connect green space, archaeological heritage and public infrastructure across Lima's metropolitan territory.",
+          "images": [0, 2, 3, 4]
+        }
+      ],
+
+      "metrics": [
+        { "value": "172 ha", "label": "total area" },
+        { "value": "66", "label": "interventions" },
+        { "value": "4 km", "label": "river corridor" }
+      ]
+    },
+
+    {
+      "id": "cordillera-blanca",
+      "title": "Cordillera Blanca Risk Assessment",
+      "subtitle": "Glacial Flood Risk Across 159 River Basins · Peruvian Andes",
+      "category": "data",
+      "tags": ["GIS app", "Climate risk", "Machine learning"],
+      "tools": ["Google Earth Engine", "Python", "GEE Apps", "WorldPop", "Copernicus"],
+      "year": "2026",
+      "location": "Ancash, Perú",
+      "embed": {
+        "type": "iframe",
+        "url": "https://cordillera-blanca-risk-app.projects.earthengine.app/view/cordillera-blanca-risk-app",
+        "height": "600px"
+      },
+      "role": "Developer & analyst",
+      "team": "Emily Deeb, Santiago Soubie, Tabata Paredes, Chad Barret",
+      "institution": "CASA, UCL",
+      "status": "published",
+      "featured": true,
+      "external_url": "https://cordillera-blanca-risk-app.projects.earthengine.app/view/cordillera-blanca-risk-app",
+      "github_url": "https://github.com/EmilyDeeb/0025_BSA-Group",
+
+      "hero_image": "projects/coordillera-blanca/hero.png",
+      "images": [
+        { "file": "projects/coordillera-blanca/0.png", "caption": "Overview of glacial flood risk across 159 micro-basins in the Cordillera Blanca, scored from Low to Very High on a combined hazard and exposure index." },
+        { "file": "projects/coordillera-blanca/1.png", "caption": "Basin-level statistics panel for a Very High risk basin: lake growth 2010–2021, glacier recession 2019–2025, land cover exposure, and population data with satellite imagery overlay." },
+        { "file": "projects/coordillera-blanca/2.png", "caption": "Detailed statistics panel showing the four-variable scoring breakdown — hazard, exposure, lake growth, and glacier loss rate — with the Generate Basin Report option." }
+      ],
+
+      "overview": "CBRA is a geospatial decision-support tool developed for CENEPRED, Peru's national disaster risk management agency. The application screens Glacial Lake Outburst Flood (GLOF) risk across 159 river micro-basins in the Cordillera Blanca, combining glacier retreat, lake expansion and population exposure into a single basin-level risk score. Designed for users without remote sensing expertise, the tool translates complex satellite-derived indicators into an accessible interface for exploring climate risk and prioritising areas for further assessment.",
+
+      "body": [
+        {
+          "heading": "Context",
+          "text": "The Cordillera Blanca contains the largest concentration of tropical glaciers in the world, but rapid glacier retreat is increasing the exposure of downstream communities to Glacial Lake Outburst Floods. The Santa River Basin is among the most exposed regions globally, with approximately 900,000 people living downstream of potentially hazardous glacial lakes.",
+          "text2": "Despite growing climate risks, existing remote sensing-based assessments often require specialist knowledge and technical workflows that limit their use by regional decision-makers. CBRA was developed to bridge this gap between scientific data and operational risk management."
+        },
+        {
+          "heading": "Risk assessment framework",
+          "text": "CBRA combines multi-temporal satellite analysis and spatial indicators to estimate GLOF risk at the hydrological scale. Glacier change was assessed using Sentinel-2 imagery (2019–2025), while glacial lake expansion was measured using JRC Global Surface Water data (2010–2021). These indicators are combined with exposure variables, including population and land cover, to generate a 0–100 impact score for each micro-basin."
+        },
+        {
+          "heading": "From analysis to decision support",
+          "text": "The application transforms complex geospatial analysis into an interactive workflow. Users can explore individual basins through satellite imagery, glacier loss, lake growth, land cover and population exposure layers, while automatically generated basin reports provide a concise summary of risk conditions.",
+          "text2": "Built entirely on Google Earth Engine and available in English and Spanish, CBRA reduces technical barriers while maintaining transparency through an integrated methodology panel. The open-source framework provides a foundation for adapting the approach to other glacierised regions of the Andes."
+        }
+      ],
+
+      "metrics": [
+        { "value": "159", "label": "river basins analysed" },
+        { "value": "16%", "label": "increase in lake area 2010-2021" },
+        { "value": "7.4%", "label": "glacier extent loss 2019-2025" }
+      ]
+    },
+
+    {
+      "id": "life-at-altitude",
+      "title": "Life at Altitude",
+      "subtitle": "A Visual Exploration of Elevation and Settlement in South America",
+      "category": "data",
+      "tags": ["Interactive web", "GIS", "Data visualisation"],
+      "tools": ["JavaScript", "Vite + React", "Mapbox", "GHS-POP data", "USGS elevation data"],
+      "year": "2025",
+      "location": "South America",
+      "role": "Developer & designer",
+      "institution": "CASA, UCL",
+      "featured": true,
+      "external_url": "https://nadiacabreras.github.io/DataStories_1/",
+      "github_url": "https://github.com/NadiaCabreraS/DataStories_1",
+
+      "hero_image": "projects/life-at-altitude/hero.png",
+      "images": [
+        { "file": "projects/life-at-altitude/0.png", "caption": "Overview panel: population density map at sea level with altitude slider and Peru vs. South America comparison chart." },
+        { "file": "projects/life-at-altitude/1.png", "caption": "Scrollytelling sequence showing three altitude thresholds: The Coastal Lowlands (0m), Into the Foothills (500m), and The Mountain Threshold (2000m)" }
+      ],
+
+      "overview": "The Andes shape the landscape of Latin America, influencing its terrain and where people settle from low valleys to high mountain regions. Life at Altitude is an interactive storytelling map that explores the relationship between elevation and human settlement across South America. As the user scrolls through an altitude slider, from sea level to over 4,000 metres, the population density map updates in real time, revealing how the Andes concentrate and redirect where people live. Each threshold unlocks a named moment: the Coastal Lowlands, the Foothills, the Mountain Threshold.",
+
+      "body": [
+        {
+          "heading": "Exploring settlement by elevation",
+          "text": "Rather than presenting elevation as a static terrain model, the project uses altitude as a narrative device for exploring settlement patterns. An interactive elevation slider progressively filters the population density map, allowing users to observe how inhabited areas change as the terrain rises. A comparison panel places each country's distribution alongside the South American average, highlighting the diversity of settlement profiles across the continent."
+        },
+        {
+          "heading": "Data and implementation",
+          "text": "The visualisation combines GHS-POP R2023A population density data from the European Commission's Joint Research Centre with GMTED2010 elevation data from the USGS. Population cells are dynamically filtered into seven elevation bands, creating a continuous transition from coastal plains to high-altitude environments. The scrollytelling sequence synchronises the narrative with the map, using named altitude thresholds to guide users through the changing relationship between topography and settlement."
+        }
+      ],
+
+      "metrics": [
+        { "value": "12", "label": "countries" },
+        { "value": "7", "label": "elevation bands" },
+        { "value": "4500", "label": "elevation range mapped" }
+      ]
+    },
+
+    {
+      "id": "heat-inequality",
+      "hidden": true,
+      "title": "Heat and Inequality",
+      "subtitle": "Why Some London Neighbourhoods Are Hotter Than Others",
+      "category": "data",
+      "tags": ["Spatial regression", "R", "Urban heat"],
+      "tools": ["R", "OLS regression", "Spatial Error Model (SAR)", "Moran´s I"],
+      "year": "2025",
+      "location": "London, UK",
+      "role": "Researcher · MSc module project",
+      "institution": "CASA, UCL",
+      "featured": false,
+
+      "hero_image": "projects/heat-inequality/hero.jpg",
+      "images": [
+        { "file": "projects/heat-inequality/01.jpg", "caption": "Urban heat exposure across London — average summertime LST 2016–2020" },
+        { "file": "projects/heat-inequality/02.jpg", "caption": "Thermal inequality across socio-economic groups" },
+        { "file": "projects/heat-inequality/03.jpg", "caption": "Population density, built-up intensity, tree canopy cover and blue-green infrastructure" },
+        { "file": "projects/heat-inequality/04.jpg", "caption": "SAR model residuals — thermal anomalies not explained by the model" }
+      ],
+
+      "overview": "This analysis examines why some London neighbourhoods are consistently hotter than others, combining satellite land surface temperature data with socioeconomic and environmental indicators across 4,825 areas. Built in R, it moves from a simple income-heat correlation toward a spatial regression model that accounts for tree canopy, soil sealing, population density and blue-green infrastructure — revealing that urban heat inequality is less a poverty problem than an infrastructure one.",
+
+      "body": [
+        {
+          "text": "Summers are getting hotter in London — but not uniformly. Using Landsat-8 satellite data processed by the GLA across 4,825 neighbourhoods, this analysis maps average summertime land surface temperatures between 2016 and 2020, revealing hotspots concentrated in East London and the inner city where temperatures can exceed the London-wide average by more than 4°C."
+        },
+        {
+          "text": "The starting hypothesis is familiar: poorer neighbourhoods are more exposed to heat. Drawing on income deprivation data from the 2019 Index of Multiple Deprivation, the pattern holds — temperatures rise steadily across quintiles, and a Spearman correlation confirms a significant positive association (ρ = 0.316, p < 0.001). But income alone explains only 8% of the variation in surface temperature. The social gradient is real, yet far from deterministic."
+        },
+        {
+          "text": "To understand what income is missing, four physical variables are added: population density, soil sealing, tree canopy cover, and blue-green infrastructure. Mapped across the city, these reveal a green divide as stark as the income divide — leafy outer boroughs against sealed, dense inner neighbourhoods with limited cooling infrastructure."
+        },
+        {
+          "text": "A spatial error model incorporating all five variables raises explanatory power to 40%, with tree canopy cover emerging as the strongest single predictor of urban heat. Once physical environment is controlled for, income deprivation loses statistical significance entirely. Socioeconomic disadvantage operates as a gatekeeper — determining who lives in urban heat traps — not as a direct driver of temperature itself."
+        },
+        {
+          "text": "Heat inequality in London is not an inevitable fact of nature. It is a legacy of historical planning decisions and uneven environmental investment — and reducing it will require place-based interventions that prioritise re-greening the streets where cooling infrastructure has never arrived."
+        }
+      ],
+
+      "metrics": [
+        { "value": "4,825", "label": "LSOAs analysed" },
+        { "value": "R² 0.40", "label": "Spatial model fit" },
+        { "value": "5", "label": "Predictions" }
+      ]
+    },
+
+    {
+      "id": "monserrate",
+      "title": "Paseo y Canal de Monserrate",
+      "subtitle": "Renaturalización y memoria hídrica en un barrio tradicional",
+      "category": "urban-design",
+      "tags": ["Urban design", "Heritage", "Water infrastructure"],
+      "tools": ["AutoCAD", "Rhino", "GIS", "Adobe Suite"],
+      "year": "2023",
+      "location": "Cercado de Lima",
+      "role": "Project coordinator",
+      "team": "Susana López, Mario de los Santos, Priscilla Cruz, Pedro Mendoza",
+      "client": "Municipalidad Metropolitana de Lima",
+      "status": "published",
+      "featured": false,
+      "external_url": "",
+      "github_url": "",
+
+      "hero_image": "projects/monserrate/hero.png",
+      "images_inline": true,
+      "images": [
+        { "file": "projects/monserrate/1.png", "caption": "Master plan showing the two canal alignments, pedestrian network and programme across the Monserrate neighbourhood." },
+        { "file": "projects/monserrate/2.jpg", "caption": "Project strategies: historic and contemporary canal systems, sustainable mobility, natural environment and public programme with key indicators." },
+        { "file": "projects/monserrate/3.jpg", "caption": "Ecosystem sections: colonial canal with dense boscosa canopy and contemporary canal with native riparian planting, showing heat island mitigation potential." },
+        { "file": "projects/monserrate/4.JPG", "caption": "Current conditions: Jirón Sancho de Rivero prior to intervention, showing poor pedestrian infrastructure and road dominance." },
+        { "file": "projects/monserrate/5.jpg", "caption": "Exposed canal remnants during archaeological excavation phase." },
+        { "file": "projects/monserrate/6.png", "caption": "Plazuela de Monserrate current state, with the Igreja Nuestra Señora de Monserrate in the background." },
+        { "file": "projects/monserrate/7.jpg", "caption": "Plazuela de Monserrate current state, with the Igreja Nuestra Señora de Monserrate in the background." },
+        { "file": "projects/monserrate/8.jpg", "caption": "Render of the restored colonial canal at the Plazuela de Monserrate with archaeological viewing windows and native planting." },
+        { "file": "projects/monserrate/9.jpg", "caption": "Render of the contemporary canal along Jirón Sancho de Rivero with pedestrian promenade and community activity." },
+        { "file": "projects/monserrate/10.jpg", "caption": "Render of the contemporary canal along Jirón Sancho de Rivero with pedestrian promenade and community activity." },
+        { "file": "projects/monserrate/taller1.jpg", "caption": "Community participation workshop with neighbourhood children defining the public programme." },
+        { "file": "projects/monserrate/taller2.jpg", "caption": "Participatory working table with adult residents and community stakeholders." }
+      ],
+
+      "overview": "ESCRIBIR",
+
+      "body": [
+        {
+          "heading": "Context",
+          "text": "Monserrate sits at the northwestern edge of Lima's Historic Centre, alongside the southern bank of the Río Rímac. Despite its cultural and patrimonial significance, the neighbourhood has been progressively abandoned — its 8,000 residents facing overcrowding, poor public space and high insecurity. At the centre of its decline: the Monserrate canal, once a vital artery of Lima's colonial water system, dried up and buried under road expansion in the twentieth century.",
+          "text2": "Archaeological excavations led by PROLIMA uncovered not only the original canal alignment but a layered record of interventions across different historical periods — evidence that shaped the design strategies for both the colonial plazuela and the contemporary canal alignment.",
+          "imageRow": [3, 4, 5, 6],
+          "imageRowCaption": "Plazuela de Monserrate current state and exposed canal remnants during archaeological excavation phase.",
+          "imageAfterRow": 0
+        },
+        {
+          "heading": "Design",
+          "text": "The project operates on two simultaneous registers: historical recovery and contemporary urban design. In the Plazuela de Monserrate, the colonial canal is restored as an open archaeological feature — its original stonework visible, its water flow reactivated using reclaimed water. Along Jirón Sancho de Rivero, a contemporary canal traces the same historic alignment, anchoring a new pedestrian promenade flanked by native riparian species.",
+          "text2": "The two canal systems are designed as distinct ecosystems. The colonial canal prioritises shade, pollination and CO₂ storage through a dense boscosa vegetation layer. The contemporary canal introduces a lighter canopy with native shrubs and herbaceous planting, maximising ground-level biodiversity and creating a heat island buffer for a neighbourhood that currently reaches 35°C in summer — 8°C above the city average.",
+          "imageGrid": [1, 7, 2, 8]
+        },
+        {
+          "heading": "Community",
+          "text": "The project was built on participatory processes from the outset. Working tables with residents, children and community leaders shaped the programme — from urban vegetable gardens and open-air exercise areas to archaeological viewing windows and citizen security infrastructure. Monserrate's renewal was designed not only to recover a canal, but to return the neighbourhood to its residents.",
+          "imageGrid": [10, 11]
+        }
+      ],
+
+      "metrics": [
+        { "value": "140", "label": "new trees" },
+        { "value": "1,780 m²", "label": "new green area" },
+        { "value": "8,000", "label": "residents benefited" }
+      ]
+    }
+
+  ]
+}
