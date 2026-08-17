@@ -23,7 +23,7 @@ export default function ProjectDetail() {
 
   const flatImages = useMemo(
     () => (project?.images ?? []).map((img) => ({
-      src: `/images/${img.file}`,
+      src: `${import.meta.env.BASE_URL}images/${img.file}`,
       alt: img.caption,
       label: img.caption,
     })),
@@ -53,7 +53,7 @@ export default function ProjectDetail() {
           aria-label="Expand image to full size"
           onClick={() => setLightboxIndex(idx)}
         >
-          <img className="figimg" src={`/images/${img.file}`} alt={img.caption} loading="lazy" />
+          <img className="figimg" src={`${import.meta.env.BASE_URL}images/${img.file}`} alt={img.caption} loading="lazy" />
         </button>
         {img.caption && (
           <figcaption className="exhibit__cap">
@@ -100,7 +100,7 @@ export default function ProjectDetail() {
                 aria-label="Expand image to full size"
                 onClick={() => setLightboxIndex(idx)}
               >
-                <img className="figimg r-1-1" src={`/images/${img.file}`} alt={img.caption} loading="lazy" />
+                <img className="figimg r-1-1" src={`${import.meta.env.BASE_URL}images/${img.file}`} alt={img.caption} loading="lazy" />
               </button>
             )
           })}
@@ -194,7 +194,7 @@ export default function ProjectDetail() {
 
             {project.hero_image && (
               <div className="cs-head-media">
-                <img className="figimg" src={`/images/${project.hero_image}`} alt={project.title} />
+                <img className="figimg" src={`${import.meta.env.BASE_URL}images/${project.hero_image}`} alt={project.title} />
               </div>
             )}
           </div>
@@ -248,7 +248,7 @@ export default function ProjectDetail() {
                         >
                           <img
                             className={`figimg r-16-10${isUrbanDesign && img.file.endsWith('.png') ? ' blend' : ''}`}
-                            src={`/images/${img.file}`}
+                            src={`${import.meta.env.BASE_URL}images/${img.file}`}
                             alt={img.caption}
                             loading="lazy"
                           />

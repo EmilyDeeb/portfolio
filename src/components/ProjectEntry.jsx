@@ -29,7 +29,7 @@ export default function ProjectEntry({ project, index, first = false }) {
         <div className="entry__media">
           <img
             className="figimg r-16-10"
-            src={`/images/${project.hero_image}`}
+            src={`${import.meta.env.BASE_URL}images/${project.hero_image}`}
             alt={project.title}
             loading="lazy"
           />

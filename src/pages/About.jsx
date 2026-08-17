@@ -35,7 +35,7 @@ export default function About() {
 
           <img
             className="figimg r-3-2 about-prose-fig"
-            src="/images/projects/aboutme/DSC_9295.jpg"
+            src={`${import.meta.env.BASE_URL}images/projects/aboutme/DSC_9295.jpg`}
             alt="Nadia Cabrera Salazar trail running in the mountains"
           />
         </div>
@@ -43,7 +43,7 @@ export default function About() {
         <aside className="about-side">
           <img
             className="figimg r-3-4 about-portrait"
-            src="/images/projects/aboutme/FotoNadia_sat.png"
+            src={`${import.meta.env.BASE_URL}images/projects/aboutme/FotoNadia_sat.png`}
             alt="Portrait of Nadia Cabrera Salazar"
           />
           <dl className="facts" aria-label="At a glance">
