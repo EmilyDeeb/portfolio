@@ -1,463 +1,454 @@
 {
   "designer": {
-    "name": "Nadia Cabrera Salazar",
+    "name": "Emily Deeb",
     "title": "Spatial Data Scientist",
-    "tagline": "Working at the intersection of urban systems, infrastructure and evidence-based planning.ranslating data into how cities get planned, funded and built.",
+    "tagline": "Location intelligence for retail, mobility and the way people move through cities — turning behavioural and spatial data into decisions.",
     "location": "London",
-    "email": "nadia.salazar.25@ucl.ac.uk",
-    "linkedin": "https://linkedin.com/in/nadiacabreras",
-    "github": "https://github.com/NadiaCabreraS",
+    "email": "emilymdeeb@gmail.com",
+    "linkedin": "https://linkedin.com/in/emilydeeb",
+    "github": "https://github.com/EmilyDeeb",
     "cv_url": ""
   },
 
   "about": {
     "openToWork": true,
-    "positioning": "I'm a spatial data scientist and urban planner passionate about understanding how cities work through data.",
+    "positioning": "I'm a spatial data scientist working in location intelligence and mobility — modelling retail behaviour, movement and access, and turning it into decisions people can act on.",
     "prose": [
-
-      "Over the past few years, I've worked across urban planning, climate resilience and international development, helping governments and organisations turn complex spatial data into evidence that supports better decisions. From analysing river basin risks in the Peruvian Andes to supporting cultural heritage and urban projects at the Inter-American Development Bank, my work has always sat at the intersection of geography, technology and public policy.",
-      "Today I'm completing an MSc in Urban Spatial Science at UCL CASA, where I've specialised in GIS, machine learning, geospatial analytics and urban modelling. My dissertation, developed in collaboration with Transport for London, explores London's functional polycentricity through millions of public transport journeys, combining spatial analysis with network science to better understand how cities actually function.",
-      "What drives me is transforming complex spatial data into clear insights, interactive tools and analytical products that help people make better decisions. Whether through maps, machine learning models or web-based applications, I enjoy building solutions that connect data with real-world urban challenges."
+      "I work in location intelligence and mobility analytics — the space where consumer behaviour, movement and urban form meet. My work asks where people go, why they go there, and what that means for where a store, a service or an investment should sit. I care as much about the commercial answer as about who gets left out of it: the equity dimension of a location decision is usually where the interesting problems are.",
+      "I recently completed an MSc in Urban Spatial Science at UCL CASA, specialising in spatial data science, machine learning and geocomputation for cities. My dissertation, an industry placement with CACI, modelled national retail spending across 3,229 Great Britain retail centres — testing how much urban form and street-network position explain about where people spend, independently of demographics. Alongside it I've modelled transport network resilience, retail catchment and siting, crime generators, and family formation under housing pressure.",
+      "Before returning to study I led an urban design and GIS team across 15 concurrent projects — masterplans, transit-oriented development and urban renewal — building the geo-computational workflows behind feasibility, morphological mapping and profitability analysis. That mix of design, delivery and analysis is what I bring to a product: I like framing the question, building the method, and making the result legible to the people who have to decide on it."
     ],
-    "human": "When I'm away from my laptop, I'm usually running trails, planning my next hiking trip, or baking something from home. I enjoy books, beautiful maps, and cities that are best explored by walking.",
+    "human": "Away from the screen I'm usually drawing, exploring a new city on foot, or chasing down a good coffee. I like beautiful maps, questions about how people behave in space, and buildings with a story.",
     "facts": [
       { "label": "based", "value": "London" },
-      { "label": "focus", "value": "Spatial Data Scientist" },
-      { "label": "languages", "value": "English, Spanish" }
+      { "label": "focus", "value": "Location Intelligence & Mobility" },
+      { "label": "languages", "value": "Arabic, English, Hebrew" }
     ],
-    "contactInvite": "I'm always happy to talk about cities, geospatial data, transport, and how spatial analysis can support better decisions. Whether you have a project in mind, an opportunity, or simply want to connect, I'd love to hear from you."
+    "contactInvite": "I'm always happy to talk about cities, retail and mobility data, location intelligence, and how spatial analysis can support better decisions. Whether you have a project in mind, a role, or just want to connect, I'd love to hear from you."
   },
 
   "projects": [
 
     {
-      "id": "access-opportunity",
-      "title": "Access Without Opportunity",
-      "subtitle": "Public Transport Accessibility and Unemployment Across English LSOAs",
+      "id": "retail-morphology",
+      "loading_label": "Retail Form",
+      "title": "Morphology, Network Position and Retail Spend",
+      "subtitle": "Does physical form predict retail expenditure across Great Britain's retail centres — independently of who lives there?",
       "category": "data",
-      "tags": ["Machine learning", "SHAP", "Spatial analysis"],
-      "tools": ["Python", "XGBoost", "SHAP", "GeoPandas", "scikit-learn"],
+      "tags": ["Machine learning", "SHAP", "Retail analytics"],
+      "tools": ["Python", "scikit-learn", "SHAP", "GeoPandas", "Spatial autocorrelation"],
       "year": "2026",
-      "location": "England, UK",
-      "role": "Researcher · MSc module project",
-      "institution": "CASA, UCL",
-      "featured": false,
+      "location": "Great Britain",
+      "role": "Industry dissertation · CACI placement",
+      "institution": "CASA, UCL · CACI Ltd",
+      "featured": true,
       "external_url": "",
-      "github_url": "https://github.com/NadiaCabreraS/Assessment_DSSS",
+      "github_url": "https://github.com/EmilyDeeb/REPO-NAME",
 
-      "hero_image": "projects/access-opportunity/hero.png",
-      "images_inline": true,
+      "hero_image": "projects/retail-morphology/hero.png",
       "images": [
-        { "file": "projects/access-opportunity/01.png", "caption": "Unemployment rate distribution, PT vs unemployment scatter, and unemployment by region across 31,810 English LSOAs." },
-        { "file": "projects/access-opportunity/02.png", "caption": "Side-by-side choropleths: unemployment rate and PT job accessibility (60-minute threshold) by LSOA across England." },
-        { "file": "projects/access-opportunity/03.png", "caption": "SHAP beeswarm plot: car deprivation dominates prediction; PT accessibility ranks 22nd of 27 predictors." },
-        { "file": "projects/access-opportunity/04.png", "caption": "SHAP interaction plot: PT accessibility has a marginal positive effect only in car-deprived neighbourhoods; the effect approaches zero where car ownership is high" },
-        { "file": "projects/access-opportunity/05.png", "caption": "Structural conditions across four PT/unemployment quadrants. Groups A and B share the same PT level but diverge entirely on deprivation indicators." }
+        { "file": "projects/retail-morphology/01.png", "caption": "3,229 Great Britain retail centres classified by urban morphological fabric type, joined to CACI Retail Footprint expenditure and Acorn geodemographics." },
+        { "file": "projects/retail-morphology/02.png", "caption": "Relative predictive importance: demographics account for roughly 70% and physical form roughly 30% of the model's explanatory power." },
+        { "file": "projects/retail-morphology/03.png", "caption": "Street-network betweenness emerged as the strongest individual physical predictor of retail spend." },
+        { "file": "projects/retail-morphology/04.png", "caption": "The 400m neighbourhood ring around a centre mattered more than the fabric of the retail centre itself." }
       ],
 
-      "overview": "Using machine learning and accessibility indicators for 31,810 Lower Super Output Areas in England, Access Without Opportunity evaluates the extent to which public transport access predicts unemployment. The analysis also highlights where other socioeconomic factors outweigh accessibility in explaining employment outcomes.",
+      "overview": "An industry-sponsored dissertation with CACI examining whether the physical form of a place — its urban morphology and street-network position — predicts retail spending patterns across Great Britain, independently of demographic composition. Using a machine learning pipeline over 3,229 retail centres, the work quantifies how much 'where and how a place is built' adds to our understanding of where people spend, beyond who lives nearby.",
 
       "body": [
         {
-          "heading": "The problem",
-          "text": "England's transport investment is often justified as a way to reduce regional inequality by improving access to employment. This project examines whether public transport accessibility is associated with lower unemployment across 31,810 Lower Super Output Areas in England.",
+          "heading": "The question",
+          "text": "Retail location analysis leans heavily on demographics: who lives in the catchment, and what they can spend. But places are physical as well as social. This dissertation, carried out on placement with CACI's Location Intelligence team, asked whether urban morphological fabric type and street-network position predict retail expenditure across Great Britain's retail centres — and crucially, whether they add anything once demographics are already accounted for.",
           "image": 0
         },
         {
-          "heading": "Correlation is misleading",
-          "text": "At first glance, neighbourhoods with better public transport tend to have higher, not lower, unemployment. The spatial distribution of both variables suggests that accessibility and deprivation concentrate in the same urban areas, making simple correlations difficult to interpret.",
-          "image": 1,
-          "text2": "To account for these structural differences, an XGBoost model was trained using 27 demographic, socioeconomic and transport variables derived from the 2021 Census, the Index of Multiple Deprivation and national accessibility datasets. The model explains 82% of the variation in unemployment across English neighbourhoods.",
-          "image2": 2
+          "heading": "Approach",
+          "text": "I built a Python machine learning pipeline integrating CACI consumer spending data with HiMoC morphometric classifications and Acorn geodemographics across 3,229 retail centres. The model combined gradient-boosted learning with SHAP for interpretability and spatial autocorrelation diagnostics to account for the geography of the data, allowing me to separate the contribution of physical form from that of demographic composition rather than letting the two blur together.",
+          "image": 1
         },
         {
-          "heading": "What drives unemployment?",
-          "text": "SHAP analysis shows that car deprivation, overcrowding and economic inactivity are the strongest predictors of unemployment. Public transport accessibility ranks 22nd of 27 variables, indicating that its contribution is statistically detectable but comparatively small once broader socioeconomic conditions are considered.",
-          "text2": "The interaction analysis reveals that accessibility has a measurable effect only in neighbourhoods with low levels of car ownership. Where private vehicles are widely available, additional public transport accessibility contributes little to explaining unemployment.",
+          "heading": "What form explains",
+          "text": "Demographics remained the strongest predictor of retail expenditure — but physical form added a consistent, measurable contribution beyond them, accounting for roughly 30% of total predictive importance against demographics' 70%. Street-network betweenness was the strongest individual physical predictor, and the surrounding 400m neighbourhood ring mattered more than the fabric of the retail centre itself. Physical form was better at predicting who spends — residents, workers, tourists — than exactly how much is spent.",
+          "image": 2,
+          "text2": "Widely cited 'declining' high streets generally performed as demographics predicted; the clearest underperformance appeared in suburban centres dominated by the Acorn Steadfast Communities segment — a more specific and actionable finding than a blanket narrative of high-street decline.",
+          "image2": 3
+        }
+      ],
+
+      "metrics": [
+        { "value": "3,229", "label": "retail centres" },
+        { "value": "70 / 30", "label": "demographics vs form" },
+        { "value": "Betweenness", "label": "top physical predictor" }
+      ]
+    },
+
+    {
+      "id": "underground-resilience",
+      "loading_label": "Network Resilience",
+      "title": "London Underground Resilience",
+      "subtitle": "Which stations hold the network together — and where does it break under stress?",
+      "category": "data",
+      "tags": ["Network science", "Transport", "Resilience"],
+      "tools": ["Python", "NetworkX", "OSMnx", "TfL NUMBAT", "Spatial analysis"],
+      "year": "2026",
+      "location": "London, UK",
+      "role": "Researcher · MSc module project",
+      "institution": "CASA, UCL",
+      "featured": true,
+      "external_url": "",
+      "github_url": "https://github.com/EmilyDeeb/REPO-NAME",
+
+      "hero_image": "projects/underground-resilience/hero.png",
+      "images": [
+        { "file": "projects/underground-resilience/01.png", "caption": "London's multi-rail network as a graph: 401 stations, 467 connections, modelled as a single undirected system from TfL's NUMBAT demand data." },
+        { "file": "projects/underground-resilience/02.png", "caption": "Betweenness centrality: Stratford and Bank & Monument act as structural brokers between the eastern and central network." },
+        { "file": "projects/underground-resilience/03.png", "caption": "Largest connected component under sequential node removal — betweenness and closeness both trigger a sharp systemic collapse at step 6." },
+        { "file": "projects/underground-resilience/04.png", "caption": "Flow-weighted analysis: under passenger volumes, Bank & Monument and Green Park become the system's functional heart, not Stratford." },
+        { "file": "projects/underground-resilience/05.png", "caption": "Disruption reroute: walking and onward tube path from a closed Bank & Monument to Waterloo, via OSMnx road network and Dijkstra." }
+      ],
+
+      "overview": "A network-science study of the London Underground's structural and operational resilience. Modelling the multi-rail system as a graph of 401 stations and layering on TfL's NUMBAT passenger flows, the project identifies which stations are critical to keeping the network connected, which are critical to keeping passengers moving, and where the system is most vulnerable to a single failure — then models a real closure and its reroute.",
+
+      "body": [
+        {
+          "heading": "Structure vs flow",
+          "text": "I modelled London's Underground, Overground and DLR as a single undirected graph — 401 stations, 467 connections — and analysed it two ways. Topologically, using degree, betweenness and closeness centrality to find the stations that hold the network together; and operationally, by weighting the same network with NUMBAT passenger flows to find the stations that carry the most people. These are different questions with different answers.",
+          "image": 0,
+          "text2": "Topologically, Stratford dominates. But once real passenger volumes are layered on, it drops to eighth — its nine connections handle modest flows — while Bank & Monument and Green Park rise to become the system's functional heart. A station can be structurally critical without being operationally critical, and a resilience strategy has to protect both.",
+          "image2": 1
+        },
+        {
+          "heading": "Where it breaks",
+          "text": "I removed stations sequentially in order of centrality, recomputing after each step, and tracked how the largest connected component collapsed. Degree-based removal fragments the network gradually — the system reroutes around high-degree hubs. But betweenness and closeness both trigger a sharp, systemic collapse at step 6, when removing West Hampstead or Canada Water severs the network. In every case, east and outer London disconnect first while the central core stays intact — a structural asymmetry along the northwest–southeast Overground and Jubilee corridor.",
+          "image": 2,
           "image2": 3
         },
         {
-          "heading": "Implications",
-          "text": "Comparing neighbourhoods with similar transport accessibility but contrasting unemployment levels shows that structural disadvantage—not accessibility—accounts for most of the difference. Areas with high unemployment experience substantially higher levels of car deprivation, overcrowding and social renting despite having comparable public transport provision. These findings suggest that improving accessibility alone is unlikely to reduce unemployment without complementary investment in housing, education and labour market policies.",
+          "heading": "Modelling a real closure",
+          "text": "To ground the analysis operationally, I modelled closing Bank & Monument — the station whose closure strands the most passengers across its connections. Using the OSMnx road network and Dijkstra's shortest-path algorithm at TfL's standard walking speed, I identified the nearest alternative station with a viable onward route to Waterloo that avoids the closed node, producing a concrete walking-plus-tube reroute rather than an abstract vulnerability score.",
           "image": 4
         }
       ],
 
       "metrics": [
-        { "value": "31,810", "label": "LSOAs analysed" },
-        { "value": "R² 0.82", "label": "XGBoost test score" },
-        { "value": "27", "label": "predictors" }
+        { "value": "401", "label": "stations modelled" },
+        { "value": "Step 6", "label": "systemic collapse point" },
+        { "value": "231,733", "label": "peak edge flow (Waterloo & City)" }
       ]
     },
 
     {
-      "id": "food-shock",
-      "title": "Food Shock: Modelling Global Supply Chain Vulnerability",
-      "subtitle": "An interactive map of global food supply chain fragility — trade flows, price shocks and import dependency across 180+ countries.",
+      "id": "crime-poi",
+      "loading_label": "Crime Generators",
+      "title": "Points of Interest as Crime Generators",
+      "subtitle": "Can the mix of amenities in a neighbourhood predict its crime — and does amenity type, not just density, decide which crime?",
       "category": "data",
-      "tags": ["Interactive web", "Data visualisation", "Supply chains"],
-      "tools": ["JavaScript", "React", "Vite", "Leaflet", "FAO data"],
+      "tags": ["Machine learning", "SHAP", "Spatial analysis"],
+      "tools": ["Python", "Random Forest", "SHAP", "OSMnx", "GeoPandas", "scikit-learn"],
       "year": "2026",
-      "location": "Global",
-      "role": "Developer & designer",
-      "team": "Emily Deeb, Jie Liu",
+      "location": "London, UK",
+      "role": "Researcher · MSc module project",
       "institution": "CASA, UCL",
-      "featured": true,
-      "external_url": "https://emilydeeb.github.io/Group_Project_0028/",
-      "github_url": "https://github.com/EmilyDeeb/Group_Project_0028",
-      "github_note": "collaborative project",
-
-      "hero_image": "projects/food-shock/hero.png",
-      "images": [
-        { "file": "projects/food-shock/0.jpg", "caption": "Global maritime and land trade flows across 180+ countries, filtered by food category. Each line connects an origin port to a destination country; line weight reflects trade volume." },
-        { "file": "projects/food-shock/1.png", "caption": "Country-level supply panel showing exports, imports, production and domestic consumption alongside top maritime import origins. The nutrition tab benchmarks per-capita dietary supply against world averages." },
-        { "file": "projects/food-shock/2.png", "caption": "FAO Food Price Index timeline from 1990 to 2026, with annotated crisis events. Each highlighted band is clickable and links the map to that disruption period." },
-        { "file": "projects/food-shock/3.png", "caption": "Strait of Hormuz disruption view showing blocked trade corridors, affected flow exposure by country, and linked news sources contextualising the geopolitical event." }
-      ],
-
-      "overview": "Food Shock is an interactive web application that maps the fragility of global food supply chains: visualising maritime trade flows, price shocks and import dependency across 180+ countries and 82 food commodities. Built on FAO trade data and the Global Food Twin dataset from Harvard, the tool translates abstract supply chain disruptions into a spatial story users can navigate.",
-      "body": [
-        {
-          "heading": "The problem",
-          "text": "Global food systems are among the most critical yet least visible infrastructures shaping everyday life. The disruption of Black Sea grain exports following Russia's invasion of Ukraine in 2022 exposed how deeply countries depend on international trade, yet few tools allowed people to understand that vulnerability at a national level. The information existed across FAO datasets, academic research and news reporting, but remained fragmented and difficult to explore."
-        },
-        {
-          "heading": "Approach",
-          "text": "Food Shock transforms fragmented datasets into an interactive narrative. Rather than presenting a static dashboard, it guides users through major food system disruptions—from the 2008 global food crisis to the Red Sea shipping disruptions—showing how geopolitical events reshape trade flows and food prices. Selecting a country reveals its import dependencies by commodity, major trading partners, and a nutrition profile comparing per-capita dietary supply with global averages."
-        },
-        {
-          "heading": "Insights and limitations",
-          "text": "The project makes global food dependency easier to understand, but it also highlights the limits of the available data. FAO trade statistics describe formal international exchanges at the national scale; they cannot capture food access, hunger, affordability, or the informal trade networks that sustain millions of people. A country may appear food secure in trade statistics while significant parts of its population remain vulnerable. Food Shock reveals the structure of the system, not the lived experience of food insecurity."
-        }
-      ],
-
-      "metrics": [
-        { "value": "180+", "label": "countries covered" },
-        { "value": "36", "label": "years of data" },
-        { "value": "7", "label": "food categories" }
-      ]
-    },
-
-    {
-      "id": "hidrogeomorfologico",
-      "loading_label": "Hydro Study",
-      "title": "Hydrogeomorphological Study of the Río Rímac",
-      "subtitle": "Strategies and Guidelines for Urban River Intervention",
-      "category": "urban-design",
-      "tags": ["Research", "Modelling", "Nature-based solutions"],
-      "tools": ["GIS", "AutoCAD"],
-      "year": "2021",
-      "location": "Historic Centre of Lima",
-      "role": "Project coordinator",
-      "team": "Susana López, Pedro Mendoza, Hans Sierra, Fiorella Guillén",
-      "client": "Municipalidad Metropolitana de Lima",
       "featured": false,
       "external_url": "",
-      "github_url": "",
+      "github_url": "https://github.com/EmilyDeeb/0006_Assessment",
 
-      "hero_image": "projects/hidrogeomorfologico/hero.png",
-      "images_inline": true,
+      "hero_image": "projects/crime-poi/hero.png",
       "images": [
-        { "file": "projects/hidrogeomorfologico/0.jpg", "caption": "Ecological cross-section of the proposed riparian corridor showing biodiversity strata, aquifer recharge zones and ecosystem services across the river edge." },
-        { "file": "projects/hidrogeomorfologico/2.jpg", "caption": "Hydraulic model across 6 river reaches: erosion levels, flow velocity, flood extent and current conditions from Puente Huáscar to Avenida Tacna." },
-        { "file": "projects/hidrogeomorfologico/1.png", "caption": "Diagram illustrating the ecosystem services of the riparian edge intervention — carbon storage, slope stabilization, phytoremediation, and habitat renaturalization." },
-        { "file": "projects/hidrogeomorfologico/Strategy1.png", "caption": "Flood plain extent along the Historic Centre riverfront." },
-        { "file": "projects/hidrogeomorfologico/Strategy2.png", "caption": "Riverbank concessions and intervention units by reach." },
-        { "file": "projects/hidrogeomorfologico/Strategy3.png", "caption": "Flow velocity mapping across the channel." },
-        { "file": "projects/hidrogeomorfologico/Strategy4.png", "caption": "River width analysis by reach." }
+        { "file": "projects/crime-poi/01.png", "caption": "41,502 points of interest across 17 amenity categories, extracted from OpenStreetMap and aggregated to 679 London wards." },
+        { "file": "projects/crime-poi/02.png", "caption": "Spatial distribution of person/society crime, property crime and amenity density — all showing strong centre-periphery gradients." },
+        { "file": "projects/crime-poi/03.png", "caption": "SHAP feature contributions for person/society crime: convenience-store density dominates; night-time venues cluster near zero." },
+        { "file": "projects/crime-poi/04.png", "caption": "SHAP for property crime: café density rises to a top predictor — evidence that amenity type, not just density, shapes which crime an area generates." },
+        { "file": "projects/crime-poi/05.png", "caption": "Spatial residuals: underprediction concentrates in outer east and west London, where structural conditions drive crime beyond amenity configuration." }
       ],
 
-      "overview": "The Hydrogeomorphological Study of the Río Rímac establishes the technical and ecological framework for all landscape interventions along the 4-kilometre stretch of the river through Lima's Historic Centre. Developed as a foundational instrument for the Proyecto Especial Paisajístico Río Rímac, the study combines hydraulic modelling, geomorphological analysis and Nature-based Solutions to define intervention guidelines for riverbank stabilisation, flood control, channel management and ecological restoration. The study received formal approval from Peru's National Water Authority (ANA) and the Ministry of Culture (MINCUL), and is being incorporated into Lima's Historic Centre Master Plan.",
+      "overview": "A supervised machine learning study testing whether the spatial layout of urban amenities predicts crime density across 679 London wards — and whether specific amenity types act as generators for specific crime types. Grounded in Routine Activity Theory and using only open POI data (no demographics), the work models person/society and property crime separately and uses SHAP to decompose which amenities drive each.",
 
       "body": [
         {
-          "heading": "Diagnosis",
-          "text": "Landscape interventions required a detailed understanding of the river's physical processes before design decisions could be made. Decades of channel modification, informal occupation and hard engineering had altered riverbank stability, disrupted ecological functions and increased flood risk throughout the Historic Centre.",
-          "text2": "Hydraulic modelling across six river reaches evaluated flow velocity, erosion, flood extent and riverbank conditions. Together, these analyses established the hydraulic behaviour and risk profile of each section, providing the evidence base for subsequent intervention strategies.",
-          "imageGrid": [3, 4, 5, 6]
+          "heading": "The question",
+          "text": "Routine Activity Theory holds that crime happens where motivated offenders, targets and the absence of guardianship converge — something the amenity profile of a place shapes directly. Most studies model total crime; this project splits it into person/society crime and property crime, asking not just whether amenity density predicts crime, but whether different amenities generate different kinds of crime. The unit is the London ward, because ward boundaries shape policing and community-safety decisions.",
+          "image": 0
         },
         {
-          "heading": "Intervention Framework",
-          "text": "The study translates hydraulic and geomorphological analysis into a site-specific intervention framework. Based on Nature-based Solutions and bioengineering principles, it defines five categories of intervention: riverbank stabilisation, channel management, upgrades to existing retaining structures, flood mitigation measures and phytoremediation. Each strategy is assigned according to the environmental conditions identified during the diagnostic phase.",
-          "image": 0,
-          "text2": "The proposed riparian section integrates these interventions into a single ecological system. Riparian vegetation, slope stabilisation and groundwater recharge are designed to work together to reduce erosion, improve habitat quality and strengthen the river's ecological resilience while respecting the cultural significance of the Historic Centre.",
-          "image2pre": 2,
-          "image2": 1
+          "heading": "Method",
+          "text": "I extracted 41,502 POIs across 17 categories from OpenStreetMap, normalised them to density per km² across 679 wards, and log-transformed to handle heavy skew. Pre-modelling diagnostics confirmed strong multicollinearity among food-and-beverage amenities and non-linear relationships — ruling out a simple linear model. I benchmarked multiple linear regression and KNN, then used a tuned Random Forest as the primary model, validated with 5-fold cross-validation, and SHAP plus permutation importance for interpretation.",
+          "image": 1
+        },
+        {
+          "heading": "Amenity type matters as much as density",
+          "text": "Random Forest explained around 62% of person/society crime and 72% of property crime. The striking finding: amenity type, not just density, decides which crime an area generates. Convenience stores and fast food are the dominant generators of person/society crime; cafés drive property crime. Most counter-intuitively, night-time economy venues — bars, pubs, nightclubs — were among the weakest predictors, consistent with the mandatory guardianship of licensed premises suppressing opportunity despite high footfall.",
+          "image": 2,
+          "image2": 3
+        },
+        {
+          "heading": "Where the model reaches its limits",
+          "text": "Mapping residuals showed systematic underprediction in outer east and west London — areas where structural conditions generate crime beyond what amenity configuration captures, and precisely where police-recorded data most undercounts. By grounding predictions in what a place does rather than who lives there, the model avoids conflating the built environment with residents' characteristics, while pointing clearly to where deprivation data would need to enter next.",
+          "image": 4
         }
-
       ],
 
       "metrics": [
-        { "value": "4 km", "label": "river stretch" },
-        { "value": "5", "label": "main intervention strategies" },
-        { "value": "2", "label": "regulatory approvals" }
+        { "value": "679", "label": "wards analysed" },
+        { "value": "41,502", "label": "points of interest" },
+        { "value": "R² 0.72", "label": "property crime (RF)" }
       ]
     },
 
     {
-      "id": "rio-rimac",
-      "title": "River Rimac Landscape Project",
-      "subtitle": "Ecological Corridor for Lima's Historic Centre",
-      "category": "urban-design",
-      "tags": ["Landscape urbanism", "Urban regeneration", "Ecological corridor"],
-      "tools": ["AutoCAD", "Rhino", "GIS", "Adobe Suite"],
-      "year": "2021–2023",
-      "location": "Historic Centre of Lima",
-      "role": "Project coordinator",
-      "team": "Susana López, Pedro Mendoza, Priscilla Cruz, Karen Canaza, Fiorella Guillén, Adriana Rojas, Mariana Levau",
-      "client": "Metropolitan Municipality of Lima",
-      "featured": true,
+      "id": "havering-retail-siting",
+      "loading_label": "Retail Siting",
+      "title": "Where Should the Supermarket Go?",
+      "subtitle": "Spatial interaction modelling for retail siting in Havering — and the trade-off between commercial return and equitable access.",
+      "category": "data",
+      "tags": ["Spatial interaction models", "Retail siting", "Accessibility"],
+      "tools": ["Python", "SpInt / Poisson GLM", "OSMnx", "Geolytix", "GeoPandas"],
+      "year": "2026",
+      "location": "Havering, London",
+      "role": "Researcher · MSc module project",
+      "institution": "CASA, UCL",
+      "featured": false,
       "external_url": "",
-      "github_url": "",
+      "github_url": "https://github.com/EmilyDeeb/REPO-NAME",
 
-      "hero_image": "projects/rio-rimac/hero.png",
-      "images_inline": true,
+      "hero_image": "projects/havering-retail-siting/hero.png",
       "images": [
-        { "file": "projects/rio-rimac/0.jpg", "caption": "Detailed master plan of the Historic Centre stretch showing the 16 heritage landmarks integrated into the intervention." },
-        { "file": "projects/rio-rimac/1.jpg", "caption": "Zoning and strategy map showing ecological zones, green corridors, archaeological sites and public recreation areas." },
-        { "file": "projects/rio-rimac/2.jpg", "caption": "Aerial render showing current conditions along the Historic Centre riverfront." },
-        { "file": "projects/rio-rimac/3.jpg", "caption": "Proposed riverfront with riparian vegetation, pedestrian infrastructure and recovered urban landscape." },
-        { "file": "projects/rio-rimac/4.jpg", "caption": "Master plan: 172 hectares and 66 interventions across 4 kilometres of the Rímac riverfront." },
-        { "file": "projects/rio-rimac/Strategies.jpg", "caption": "Strategies for the project: risk mitigation, sustainable mobility, renaturalisation, public space activatio" }
+        { "file": "projects/havering-retail-siting/01.png", "caption": "Production-constrained spatial interaction model calibrated on observed mobility flows across 775 output areas and 56 destinations." },
+        { "file": "projects/havering-retail-siting/02.png", "caption": "Net trip preference between two candidate store locations — a systemic split between the well-served core and the underserved south." },
+        { "file": "projects/havering-retail-siting/03.png", "caption": "Transport-shock scenario: doubling distance decay to simulate a bus strike, showing which residents lose access first." },
+        { "file": "projects/havering-retail-siting/04.png", "caption": "Pedestrian grocery access gap: 15-minute walking catchments of existing stores against the unserved southern gap Location B would fill." }
       ],
 
-      "overview": "The Río Rímac Landscape Project reimagines Lima's historic river as an ecological corridor and public spine for the city's Historic Centre. Commissioned by the Municipalidad Metropolitana de Lima with financing from CAF and the Inter-American Development Bank, the project covers 172 hectares and 4 kilometres of degraded riverfront, proposing 66 interventions — from riverbank bioengineering and riparian reforestation to public plazas, active mobility networks and archaeological heritage recovery. As project coordinator, I led the technical and institutional delivery across a multidisciplinary team, managing alignment between municipal, national and international partners throughout the full project lifecycle.",
+      "overview": "A spatial interaction modelling study evaluating where a new supermarket should open in Havering — and for whom. Calibrating a production-constrained gravity model on observed mobility flows, the project tests two candidate locations and store sizes, stress-tests them under a simulated transport shock, and weighs the commercially optimal site against the one that closes a genuine access gap for elderly, car-less residents.",
 
       "body": [
         {
-          "heading": "Context",
-          "text": "The Río Rímac runs through the heart of Lima — yet for decades it has been treated as infrastructure rather than landscape. Urban growth has fragmented its banks, eroded biodiversity, and severed the river from the 10 million residents of Greater Lima. The historic centre, home to UNESCO World Heritage sites and one of the densest urban fabrics in South America, sits directly along its edge with almost no green space: 3.7m² of green area per inhabitant against a WHO recommendation of 9m².",
-          "text2": "The Proyecto Especial Paisajístico Río Rímac is the largest urban-landscape intervention in Lima in decades. Commissioned by the Municipalidad Metropolitana de Lima with financing from CAF and the Inter-American Development Bank, the project covers 172 hectares and 4 kilometres of riverfront across 10 districts, proposing 66 interventions to restore the Rímac as an ecological corridor and public spine for the Historic Centre.",
-          "image2": 1
+          "heading": "The model",
+          "text": "I calibrated a production-constrained spatial interaction model — the standard retail gravity model — on observed mobility flows across 775 output areas and 56 destinations in Havering, using a Poisson GLM with origin fixed effects. Destination attractiveness was operationalised as supermarket floor area from the Geolytix dataset, and travel cost as road-network distance computed with Dijkstra on the OSMnx graph. An exponential deterrence function fit best, reflecting the sharp distance-decay of routine grocery trips.",
+          "image": 0
         },
         {
-          "heading": "Strategy",
-          "text": "The project is structured around four interconnected strategies, each addressing a dimension of the river's degradation.",
-          "text2": "Risk mitigation stabilises eroded riverbanks and recovers flood-prone areas through riparian reforestation and bioengineering. Sustainable mobility reconnects the river corridor to the city through 486 kilometres of proposed green corridors and active transport infrastructure. Renaturalisation restores the hydrological and ecological functions of the river — recovering 3 historic canals, planting 31.2 hectares of riparian forest, and establishing phytoremediation zones along 1,454 metres of riverbank. Public space activation transforms the river edge into a network of accessible parks, plazas and panoramic viewpoints anchored in the archaeological and cultural heritage of the Historic Centre.",
-          "image2": 5
+          "heading": "Commercial answer vs equity answer",
+          "text": "On predicted footfall alone, the central Location A is the stronger commercial investment — it draws around 11% more trips across every scenario, and its central position beats the peripheral Location B, whose customers travel twice as far. But a tenfold increase in floor area yields only a 30% increase in trips: under this catchment, distance dominates and store size is a secondary lever. The delta map also exposed a systemic bias — the model surges demand in the dense core while underestimating cross-boundary movement in the south.",
+          "image": 1
         },
         {
-          "heading": "Scale",
-          "text": "As project coordinator, I led the technical and institutional coordination across a multidisciplinary team of landscape architects, urban planners and engineers, managing the delivery pipeline across 66 interventions of varying scale and complexity. The project was structured following INVIERTE.PE investment criteria and required continuous alignment between municipal, national and international financing partners.",
-          "text2": "The 4-kilometre stretch through the Historic Centre is designed as a replicable model for the remaining 27 kilometres of the historic Rímac — positioning urban rivers as opportunity corridors that connect green space, archaeological heritage and public infrastructure across Lima's metropolitan territory.",
-          "images": [0, 2, 3, 4]
+          "heading": "Stress-testing and access",
+          "text": "I modelled a TfL bus strike as a transport-cost shock by doubling the distance-decay parameter. The response was asymmetric: the peripheral Location B lost the most, because its customers already travelled ~8.8km and the exponential penalty compounds — and it is exactly southern Havering's older, car-less residents who face the steepest rise in effective travel cost. A 15-minute walking-catchment analysis showed 18% of the borough has no supermarket within walking distance, concentrated in the south. Location B would bring 4,682 previously unserved residents into walkable range.",
+          "image": 2,
+          "image2": 3
+        },
+        {
+          "heading": "The recommendation",
+          "text": "The two answers diverge honestly: Location A is the stronger pure-commercial bet, while Location B addresses a real spatial gap, serves a population with demonstrably greater need, becomes more valuable under disruption, and is likely underestimated by a model that can't capture cross-boundary demand. For a public or mixed-interest investor weighing efficiency against equity, a small-format store at Location B is the recommended investment — the store size matched to the walkable catchment it actually serves.",
+          "image": 3
         }
       ],
 
       "metrics": [
-        { "value": "172 ha", "label": "total area" },
-        { "value": "66", "label": "interventions" },
-        { "value": "4 km", "label": "river corridor" }
+        { "value": "775", "label": "output areas modelled" },
+        { "value": "18.1%", "label": "borough without walkable access" },
+        { "value": "4,682", "label": "residents newly served by B" }
+      ]
+    },
+
+    {
+      "id": "fertility-london",
+      "loading_label": "Family Formation",
+      "title": "Where Families Still Form Under Constraint",
+      "subtitle": "Mapping where early family formation persists in London despite housing pressure — and why housing alone doesn't explain it.",
+      "category": "urban-design",
+      "tags": ["Spatial statistics", "Mixed-effects models", "Housing"],
+      "tools": ["R", "PCA", "Linear Mixed-Effects", "K-means", "Spatial analysis"],
+      "year": "2026",
+      "location": "London, UK",
+      "role": "Researcher · MSc module project",
+      "institution": "CASA, UCL",
+      "featured": false,
+      "external_url": "",
+      "github_url": "https://github.com/EmilyDeeb/REPO-NAME",
+
+      "hero_image": "projects/fertility-london/hero.png",
+      "images": [
+        { "file": "projects/fertility-london/01.png", "caption": "Spatial concentration of fertility across London MSOAs — distinct higher-fertility clusters in North and North-East London." },
+        { "file": "projects/fertility-london/02.png", "caption": "The Housing Portfolio Index (HPI), combining housing-cost pressure and small-dwelling prevalence via PCA." },
+        { "file": "projects/fertility-london/03.png", "caption": "Four neighbourhood types by housing pressure and fertility — including 'Resilient Growth': high fertility despite high constraint." },
+        { "file": "projects/fertility-london/04.png", "caption": "Mixed-effects model residuals: spatial clustering that persists even after accounting for housing pressure and borough effects." }
+      ],
+
+      "overview": "A spatial-statistical study of where early family formation remains viable in London despite intense housing pressure. Building a composite Housing Portfolio Index and working through correlation, regression and linear mixed-effects models, the analysis shows that housing constraint is a weak city-wide predictor of fertility but a meaningful one within borough contexts — and that the neighbourhoods where families persist under pressure are shaped as much by demographics and culture as by dwellings.",
+
+      "body": [
+        {
+          "heading": "The question",
+          "text": "With London fertility falling to 1.35 children per woman, family formation in high-cost cities is usually framed as a struggle driven outward by housing costs. This analysis asks a sharper, distinctly urban question: where in London does early family formation remain viable despite constraint? Working at MSOA level, it integrates births and fertility data, dwelling-size structure and housing-cost pressure to look for the neighbourhoods that hold on.",
+          "image": 0
+        },
+        {
+          "heading": "Measuring housing pressure",
+          "text": "I combined two structural features of the housing environment — the prevalence of small (one-bedroom) dwellings and housing-cost pressure (the gap between income before and after housing costs) — into a single Housing Portfolio Index using PCA, with both variables loading equally. Higher HPI marks neighbourhoods that are both expensive and structurally constrained for families.",
+          "image": 1
+        },
+        {
+          "heading": "Housing isn't the whole story",
+          "text": "City-wide, HPI is a weak linear predictor of fertility — but an ANOVA showed birth rates vary drastically by borough, motivating a linear mixed-effects model nesting neighbourhoods within boroughs. HPI then became clearly significant, but borough-level variation exceeded neighbourhood-level variation: the borough a family lives in, and the support it offers, matters as much as the size or cost of their home. A four-way typology surfaced 'Resilient Growth' neighbourhoods — high fertility despite high constraint — concentrated in Hackney, Haringey and Newham.",
+          "image": 2,
+          "image2": 3
+        },
+        {
+          "heading": "Why it matters",
+          "text": "The neighbourhoods where families persist under pressure cluster in East and North-East London, where high costs and small dwellings coexist with above-average fertility — driven by demographics, cultural networks and inward migration rather than housing alone. The policy implication is that supporting early family formation means looking past housing metrics to borough-level context: schools, childcare, open space and community — the conditions local councils shape, which conventional housing-focused frameworks miss.",
+          "image": 3
+        }
+      ],
+
+      "metrics": [
+        { "value": "~960", "label": "MSOAs analysed" },
+        { "value": "PCA + LME", "label": "modelling approach" },
+        { "value": "47", "label": "'resilient growth' neighbourhoods" }
       ]
     },
 
     {
       "id": "cordillera-blanca",
-      "title": "Cordillera Blanca Risk Assessment",
-      "subtitle": "Glacial Flood Risk Across 159 River Basins · Peruvian Andes",
-      "category": "data",
-      "tags": ["GIS app", "Climate risk", "Machine learning"],
-      "tools": ["Google Earth Engine", "Python", "GEE Apps", "WorldPop", "Copernicus"],
+      "loading_label": "GLOF Risk",
+      "title": "Cordillera Blanca Risk App",
+      "subtitle": "A geospatial screening tool putting glacial flood risk into the hands of non-specialist decision-makers in the Peruvian Andes.",
+      "category": "urban-design",
+      "tags": ["Remote sensing", "Climate risk", "Decision-support tool"],
+      "tools": ["Google Earth Engine", "Sentinel-2", "JRC Global Surface Water", "SRTM", "JavaScript"],
       "year": "2026",
-      "location": "Ancash, Perú",
-      "embed": {
-        "type": "iframe",
-        "url": "https://cordillera-blanca-risk-app.projects.earthengine.app/view/cordillera-blanca-risk-app",
-        "height": "600px"
-      },
-      "role": "Developer & analyst",
-      "team": "Emily Deeb, Santiago Soubie, Tabata Paredes, Chad Barret",
+      "location": "Áncash, Peru",
+      "role": "Data & methodology integration",
+      "team": "SQLitos team (collaboration) · with the Inter-American Development Bank",
       "institution": "CASA, UCL",
-      "status": "published",
-      "featured": true,
-      "external_url": "https://cordillera-blanca-risk-app.projects.earthengine.app/view/cordillera-blanca-risk-app",
-      "github_url": "https://github.com/EmilyDeeb/0025_BSA-Group",
+      "github_note": "collaborative project",
+      "featured": false,
+      "external_url": "",
+      "github_url": "https://github.com/EmilyDeeb/REPO-NAME",
 
-      "hero_image": "projects/coordillera-blanca/hero.png",
+      "hero_image": "projects/cordillera-blanca/hero.png",
       "images": [
-        { "file": "projects/coordillera-blanca/0.png", "caption": "Overview of glacial flood risk across 159 micro-basins in the Cordillera Blanca, scored from Low to Very High on a combined hazard and exposure index." },
-        { "file": "projects/coordillera-blanca/1.png", "caption": "Basin-level statistics panel for a Very High risk basin: lake growth 2010–2021, glacier recession 2019–2025, land cover exposure, and population data with satellite imagery overlay." },
-        { "file": "projects/coordillera-blanca/2.png", "caption": "Detailed statistics panel showing the four-variable scoring breakdown — hazard, exposure, lake growth, and glacier loss rate — with the Generate Basin Report option." }
+        { "file": "projects/cordillera-blanca/01.png", "caption": "Basin-level flood impact across 159 river micro-basins, scored 0–100 by combining hazard and exposure into a single interpretable index." },
+        { "file": "projects/cordillera-blanca/02.png", "caption": "Per-basin statistics panel: lake growth, glacier recession, land-cover exposure and population, available in Spanish and English." },
+        { "file": "projects/cordillera-blanca/03.png", "caption": "Glacier recession (2019–2025) and glacial lake growth (2010–2021) derived from Sentinel-2 and JRC Global Surface Water in Google Earth Engine." }
       ],
 
-      "overview": "CBRA is a geospatial decision-support tool developed for CENEPRED, Peru's national disaster risk management agency. The application screens Glacial Lake Outburst Flood (GLOF) risk across 159 river micro-basins in the Cordillera Blanca, combining glacier retreat, lake expansion and population exposure into a single basin-level risk score. Designed for users without remote sensing expertise, the tool translates complex satellite-derived indicators into an accessible interface for exploring climate risk and prioritising areas for further assessment.",
+      "overview": "A geospatial decision-support tool built for CENEPRED, Peru's national disaster-risk agency, that screens Glacial Lake Outburst Flood (GLOF) risk across 159 river micro-basins in the Cordillera Blanca. It combines glacier retreat, lake expansion and population exposure into a single basin-level score, designed for users without remote-sensing expertise. My role was to take each analytical section's methodology and integrate it into one coherent codebase, then test the full pipeline end-to-end.",
 
       "body": [
         {
           "heading": "Context",
-          "text": "The Cordillera Blanca contains the largest concentration of tropical glaciers in the world, but rapid glacier retreat is increasing the exposure of downstream communities to Glacial Lake Outburst Floods. The Santa River Basin is among the most exposed regions globally, with approximately 900,000 people living downstream of potentially hazardous glacial lakes.",
-          "text2": "Despite growing climate risks, existing remote sensing-based assessments often require specialist knowledge and technical workflows that limit their use by regional decision-makers. CBRA was developed to bridge this gap between scientific data and operational risk management."
+          "text": "The Cordillera Blanca holds the largest concentration of tropical glaciers on Earth, and rapid retreat is raising the exposure of downstream communities to Glacial Lake Outburst Floods — with roughly 900,000 people living downstream of potentially hazardous lakes. Existing remote-sensing assessments demand specialist knowledge that limits their use by the regional staff who actually coordinate disaster response. The tool, developed with the Inter-American Development Bank, was built to bridge that gap.",
+          "image": 0
         },
         {
-          "heading": "Risk assessment framework",
-          "text": "CBRA combines multi-temporal satellite analysis and spatial indicators to estimate GLOF risk at the hydrological scale. Glacier change was assessed using Sentinel-2 imagery (2019–2025), while glacial lake expansion was measured using JRC Global Surface Water data (2010–2021). These indicators are combined with exposure variables, including population and land cover, to generate a 0–100 impact score for each micro-basin."
+          "heading": "My contribution",
+          "text": "This was a team project, and my role was integration: taking the separate methodological components — glacier-retreat detection, glacial-lake growth, hazard scoring and exposure — and merging them into a single unified codebase in Google Earth Engine, then testing the whole pipeline to make sure the logic held together and the outputs made sense at basin scale. Glacier change came from Sentinel-2 (2019–2025), lake expansion from JRC Global Surface Water (2010–2021), combined with population and land-cover exposure into a 0–100 impact score per basin.",
+          "image": 2
         },
         {
-          "heading": "From analysis to decision support",
-          "text": "The application transforms complex geospatial analysis into an interactive workflow. Users can explore individual basins through satellite imagery, glacier loss, lake growth, land cover and population exposure layers, while automatically generated basin reports provide a concise summary of risk conditions.",
-          "text2": "Built entirely on Google Earth Engine and available in English and Spanish, CBRA reduces technical barriers while maintaining transparency through an integrated methodology panel. The open-source framework provides a foundation for adapting the approach to other glacierised regions of the Andes."
+          "heading": "From analysis to decision-support",
+          "text": "The application turns complex geospatial analysis into an interactive workflow: users explore any basin through satellite imagery, glacier loss, lake growth, land cover and population layers, and generate a concise basin report on demand. Built entirely on Google Earth Engine, available in English and Spanish, and transparent through an integrated methodology panel, it lowers the technical barrier while staying auditable — an open-source framework adaptable to other glacierised regions of the Andes.",
+          "image": 1
         }
       ],
 
       "metrics": [
         { "value": "159", "label": "river basins analysed" },
-        { "value": "16%", "label": "increase in lake area 2010-2021" },
-        { "value": "7.4%", "label": "glacier extent loss 2019-2025" }
+        { "value": "16%", "label": "lake-area growth 2010–2021" },
+        { "value": "7.4%", "label": "glacier loss 2019–2025" }
       ]
     },
 
     {
-      "id": "life-at-altitude",
-      "title": "Life at Altitude",
-      "subtitle": "A Visual Exploration of Elevation and Settlement in South America",
-      "category": "data",
-      "tags": ["Interactive web", "GIS", "Data visualisation"],
-      "tools": ["JavaScript", "Vite + React", "Mapbox", "GHS-POP data", "USGS elevation data"],
-      "year": "2025",
-      "location": "South America",
-      "role": "Developer & designer",
-      "institution": "CASA, UCL",
-      "featured": true,
-      "external_url": "https://nadiacabreras.github.io/DataStories_1/",
-      "github_url": "https://github.com/NadiaCabreraS/DataStories_1",
-
-      "hero_image": "projects/life-at-altitude/hero.png",
-      "images": [
-        { "file": "projects/life-at-altitude/0.png", "caption": "Overview panel: population density map at sea level with altitude slider and Peru vs. South America comparison chart." },
-        { "file": "projects/life-at-altitude/1.png", "caption": "Scrollytelling sequence showing three altitude thresholds: The Coastal Lowlands (0m), Into the Foothills (500m), and The Mountain Threshold (2000m)" }
-      ],
-
-      "overview": "The Andes shape the landscape of Latin America, influencing its terrain and where people settle from low valleys to high mountain regions. Life at Altitude is an interactive storytelling map that explores the relationship between elevation and human settlement across South America. As the user scrolls through an altitude slider, from sea level to over 4,000 metres, the population density map updates in real time, revealing how the Andes concentrate and redirect where people live. Each threshold unlocks a named moment: the Coastal Lowlands, the Foothills, the Mountain Threshold.",
-
-      "body": [
-        {
-          "heading": "Exploring settlement by elevation",
-          "text": "Rather than presenting elevation as a static terrain model, the project uses altitude as a narrative device for exploring settlement patterns. An interactive elevation slider progressively filters the population density map, allowing users to observe how inhabited areas change as the terrain rises. A comparison panel places each country's distribution alongside the South American average, highlighting the diversity of settlement profiles across the continent."
-        },
-        {
-          "heading": "Data and implementation",
-          "text": "The visualisation combines GHS-POP R2023A population density data from the European Commission's Joint Research Centre with GMTED2010 elevation data from the USGS. Population cells are dynamically filtered into seven elevation bands, creating a continuous transition from coastal plains to high-altitude environments. The scrollytelling sequence synchronises the narrative with the map, using named altitude thresholds to guide users through the changing relationship between topography and settlement."
-        }
-      ],
-
-      "metrics": [
-        { "value": "12", "label": "countries" },
-        { "value": "7", "label": "elevation bands" },
-        { "value": "4500", "label": "elevation range mapped" }
-      ]
-    },
-
-    {
-      "id": "heat-inequality",
-      "hidden": true,
-      "title": "Heat and Inequality",
-      "subtitle": "Why Some London Neighbourhoods Are Hotter Than Others",
-      "category": "data",
-      "tags": ["Spatial regression", "R", "Urban heat"],
-      "tools": ["R", "OLS regression", "Spatial Error Model (SAR)", "Moran´s I"],
-      "year": "2025",
-      "location": "London, UK",
-      "role": "Researcher · MSc module project",
-      "institution": "CASA, UCL",
-      "featured": false,
-
-      "hero_image": "projects/heat-inequality/hero.jpg",
-      "images": [
-        { "file": "projects/heat-inequality/01.jpg", "caption": "Urban heat exposure across London — average summertime LST 2016–2020" },
-        { "file": "projects/heat-inequality/02.jpg", "caption": "Thermal inequality across socio-economic groups" },
-        { "file": "projects/heat-inequality/03.jpg", "caption": "Population density, built-up intensity, tree canopy cover and blue-green infrastructure" },
-        { "file": "projects/heat-inequality/04.jpg", "caption": "SAR model residuals — thermal anomalies not explained by the model" }
-      ],
-
-      "overview": "This analysis examines why some London neighbourhoods are consistently hotter than others, combining satellite land surface temperature data with socioeconomic and environmental indicators across 4,825 areas. Built in R, it moves from a simple income-heat correlation toward a spatial regression model that accounts for tree canopy, soil sealing, population density and blue-green infrastructure — revealing that urban heat inequality is less a poverty problem than an infrastructure one.",
-
-      "body": [
-        {
-          "text": "Summers are getting hotter in London — but not uniformly. Using Landsat-8 satellite data processed by the GLA across 4,825 neighbourhoods, this analysis maps average summertime land surface temperatures between 2016 and 2020, revealing hotspots concentrated in East London and the inner city where temperatures can exceed the London-wide average by more than 4°C."
-        },
-        {
-          "text": "The starting hypothesis is familiar: poorer neighbourhoods are more exposed to heat. Drawing on income deprivation data from the 2019 Index of Multiple Deprivation, the pattern holds — temperatures rise steadily across quintiles, and a Spearman correlation confirms a significant positive association (ρ = 0.316, p < 0.001). But income alone explains only 8% of the variation in surface temperature. The social gradient is real, yet far from deterministic."
-        },
-        {
-          "text": "To understand what income is missing, four physical variables are added: population density, soil sealing, tree canopy cover, and blue-green infrastructure. Mapped across the city, these reveal a green divide as stark as the income divide — leafy outer boroughs against sealed, dense inner neighbourhoods with limited cooling infrastructure."
-        },
-        {
-          "text": "A spatial error model incorporating all five variables raises explanatory power to 40%, with tree canopy cover emerging as the strongest single predictor of urban heat. Once physical environment is controlled for, income deprivation loses statistical significance entirely. Socioeconomic disadvantage operates as a gatekeeper — determining who lives in urban heat traps — not as a direct driver of temperature itself."
-        },
-        {
-          "text": "Heat inequality in London is not an inevitable fact of nature. It is a legacy of historical planning decisions and uneven environmental investment — and reducing it will require place-based interventions that prioritise re-greening the streets where cooling infrastructure has never arrived."
-        }
-      ],
-
-      "metrics": [
-        { "value": "4,825", "label": "LSOAs analysed" },
-        { "value": "R² 0.40", "label": "Spatial model fit" },
-        { "value": "5", "label": "Predictions" }
-      ]
-    },
-
-    {
-      "id": "monserrate",
-      "title": "Paseo y Canal de Monserrate",
-      "subtitle": "Renaturalización y memoria hídrica en un barrio tradicional",
+      "id": "food-shock",
+      "loading_label": "Food Shock",
+      "title": "Food Shock: Global Supply Chain Fragility",
+      "subtitle": "An interactive map of global food supply chain disruption — trade flows, price shocks and import dependency across 180+ countries.",
       "category": "urban-design",
-      "tags": ["Urban design", "Heritage", "Water infrastructure"],
-      "tools": ["AutoCAD", "Rhino", "GIS", "Adobe Suite"],
-      "year": "2023",
-      "location": "Cercado de Lima",
-      "role": "Project coordinator",
-      "team": "Susana López, Mario de los Santos, Priscilla Cruz, Pedro Mendoza",
-      "client": "Municipalidad Metropolitana de Lima",
-      "status": "published",
+      "tags": ["Interactive web", "Data visualisation", "Supply chains"],
+      "tools": ["JavaScript", "React", "Vite", "Leaflet", "Recharts", "FAO data"],
+      "year": "2026",
+      "location": "Global",
+      "role": "Base site, map & side panel · integration lead",
+      "team": "Jie Liu, Nadia Cabrera Salazar, Emily Deeb",
+      "institution": "CASA, UCL",
+      "github_note": "collaborative project",
+      "featured": false,
+      "external_url": "https://emilydeeb.github.io/Group_Project_0028/",
+      "github_url": "https://github.com/EmilyDeeb/Group_Project_0028",
+
+      "hero_image": "projects/food-shock/hero.png",
+      "images": [
+        { "file": "projects/food-shock/0.jpg", "caption": "Global maritime and land trade flows across 180+ countries, filtered by food category. Line weight reflects trade volume between origin and destination." },
+        { "file": "projects/food-shock/1.png", "caption": "Country-level side panel: import origins, commodity breakdown, and a nutrition tab benchmarking per-capita dietary supply against world averages." },
+        { "file": "projects/food-shock/2.png", "caption": "FAO Food Price Index timeline with annotated crisis events — COVID-19, the Ukraine war, the 2026 conflict — each linking the map to that disruption." },
+        { "file": "projects/food-shock/3.png", "caption": "Crisis view showing disrupted trade corridors and affected-flow exposure by country." }
+      ],
+
+      "overview": "Food Shock is an interactive web application that maps the fragility of global food supply chains — visualising maritime and land trade flows, price shocks and import dependency across 180+ countries and 82 commodities. Built on FAO trade data and Harvard's Global Food Twin dataset, it turns abstract supply-chain disruption into a spatial story users can navigate. I was responsible for the base site, the map and side panel, and pulling the team's work together into one coherent application.",
+
+      "body": [
+        {
+          "heading": "The problem",
+          "text": "Global food systems are among the most critical yet least visible infrastructures in everyday life. The UK imports roughly 48% of its food, and events like the war in Ukraine or disruption to key shipping straits can move commodity prices and food availability for billions — yet most people can't see how a distant event connects to the food on their plate. The information exists across FAO datasets, research and news, but stays fragmented and hard to explore.",
+          "image": 0
+        },
+        {
+          "heading": "My contribution",
+          "text": "In a team of three, I built the base React application, the Leaflet map and the country-level side panel, and took responsibility for integration — making sure the map, the price timeline, the commodity breakdown and the nutrition comparison came together as one coherent tool. Rather than a static dashboard, the app is designed as a 'tour': an animated globe and crisis timeline let users follow disruptions as they unfold and affect prices and flows, exploring the data by moving through it.",
+          "image": 1
+        },
+        {
+          "heading": "Insights and limitations",
+          "text": "The tool makes global food dependency easier to grasp, but it's honest about what national trade statistics can't show: food access, hunger, affordability, or the informal cross-border trade that sustains millions. A country can look food-secure in trade data while parts of its population remain vulnerable. Food Shock reveals the structure of the system — not the lived experience of food insecurity — and treats that boundary as part of what the interface has to communicate.",
+          "image": 2
+        }
+      ],
+
+      "metrics": [
+        { "value": "180+", "label": "countries covered" },
+        { "value": "82", "label": "food commodities" },
+        { "value": "3", "label": "crisis events mapped" }
+      ]
+    },
+
+    {
+      "id": "hinge-idea",
+      "hidden": true,
+      "loading_label": "In Progress",
+      "title": "Hinge Website (Placeholder)",
+      "subtitle": "Placeholder for upcoming project — to be built out.",
+      "category": "data",
+      "tags": ["Interactive web", "In progress"],
+      "tools": ["TBD"],
+      "year": "2026",
+      "location": "London, UK",
+      "role": "Developer & designer",
+      "institution": "Personal project",
       "featured": false,
       "external_url": "",
-      "github_url": "",
+      "github_url": "https://github.com/EmilyDeeb/REPO-NAME",
 
-      "hero_image": "projects/monserrate/hero.png",
-      "images_inline": true,
+      "hero_image": "projects/hinge-idea/hero.png",
       "images": [
-        { "file": "projects/monserrate/1.png", "caption": "Master plan showing the two canal alignments, pedestrian network and programme across the Monserrate neighbourhood." },
-        { "file": "projects/monserrate/2.jpg", "caption": "Project strategies: historic and contemporary canal systems, sustainable mobility, natural environment and public programme with key indicators." },
-        { "file": "projects/monserrate/3.jpg", "caption": "Ecosystem sections: colonial canal with dense boscosa canopy and contemporary canal with native riparian planting, showing heat island mitigation potential." },
-        { "file": "projects/monserrate/4.JPG", "caption": "Current conditions: Jirón Sancho de Rivero prior to intervention, showing poor pedestrian infrastructure and road dominance." },
-        { "file": "projects/monserrate/5.jpg", "caption": "Exposed canal remnants during archaeological excavation phase." },
-        { "file": "projects/monserrate/6.png", "caption": "Plazuela de Monserrate current state, with the Igreja Nuestra Señora de Monserrate in the background." },
-        { "file": "projects/monserrate/7.jpg", "caption": "Plazuela de Monserrate current state, with the Igreja Nuestra Señora de Monserrate in the background." },
-        { "file": "projects/monserrate/8.jpg", "caption": "Render of the restored colonial canal at the Plazuela de Monserrate with archaeological viewing windows and native planting." },
-        { "file": "projects/monserrate/9.jpg", "caption": "Render of the contemporary canal along Jirón Sancho de Rivero with pedestrian promenade and community activity." },
-        { "file": "projects/monserrate/10.jpg", "caption": "Render of the contemporary canal along Jirón Sancho de Rivero with pedestrian promenade and community activity." },
-        { "file": "projects/monserrate/taller1.jpg", "caption": "Community participation workshop with neighbourhood children defining the public programme." },
-        { "file": "projects/monserrate/taller2.jpg", "caption": "Participatory working table with adult residents and community stakeholders." }
+        { "file": "projects/hinge-idea/01.png", "caption": "Placeholder caption — replace with project imagery." }
       ],
 
-      "overview": "ESCRIBIR",
+      "overview": "Placeholder entry for the Hinge website idea. Fill in the overview, body sections and metrics once the project is built. This entry is hidden from the live site (hidden: true) until you're ready to publish it.",
 
       "body": [
         {
-          "heading": "Context",
-          "text": "Monserrate sits at the northwestern edge of Lima's Historic Centre, alongside the southern bank of the Río Rímac. Despite its cultural and patrimonial significance, the neighbourhood has been progressively abandoned — its 8,000 residents facing overcrowding, poor public space and high insecurity. At the centre of its decline: the Monserrate canal, once a vital artery of Lima's colonial water system, dried up and buried under road expansion in the twentieth century.",
-          "text2": "Archaeological excavations led by PROLIMA uncovered not only the original canal alignment but a layered record of interventions across different historical periods — evidence that shaped the design strategies for both the colonial plazuela and the contemporary canal alignment.",
-          "imageRow": [3, 4, 5, 6],
-          "imageRowCaption": "Plazuela de Monserrate current state and exposed canal remnants during archaeological excavation phase.",
-          "imageAfterRow": 0
-        },
-        {
-          "heading": "Design",
-          "text": "The project operates on two simultaneous registers: historical recovery and contemporary urban design. In the Plazuela de Monserrate, the colonial canal is restored as an open archaeological feature — its original stonework visible, its water flow reactivated using reclaimed water. Along Jirón Sancho de Rivero, a contemporary canal traces the same historic alignment, anchoring a new pedestrian promenade flanked by native riparian species.",
-          "text2": "The two canal systems are designed as distinct ecosystems. The colonial canal prioritises shade, pollination and CO₂ storage through a dense boscosa vegetation layer. The contemporary canal introduces a lighter canopy with native shrubs and herbaceous planting, maximising ground-level biodiversity and creating a heat island buffer for a neighbourhood that currently reaches 35°C in summer — 8°C above the city average.",
-          "imageGrid": [1, 7, 2, 8]
-        },
-        {
-          "heading": "Community",
-          "text": "The project was built on participatory processes from the outset. Working tables with residents, children and community leaders shaped the programme — from urban vegetable gardens and open-air exercise areas to archaeological viewing windows and citizen security infrastructure. Monserrate's renewal was designed not only to recover a canal, but to return the neighbourhood to its residents.",
-          "imageGrid": [10, 11]
+          "heading": "Concept",
+          "text": "Placeholder text — describe the idea, the problem it addresses, and your approach here."
         }
       ],
 
       "metrics": [
-        { "value": "140", "label": "new trees" },
-        { "value": "1,780 m²", "label": "new green area" },
-        { "value": "8,000", "label": "residents benefited" }
+        { "value": "—", "label": "TBD" },
+        { "value": "—", "label": "TBD" },
+        { "value": "—", "label": "TBD" }
       ]
     }
 

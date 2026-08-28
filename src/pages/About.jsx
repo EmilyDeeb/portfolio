@@ -12,7 +12,7 @@ export default function About() {
           <span className="sep" aria-hidden="true">/</span>
           <span className="here">about</span>
         </nav>
-        <h1 className="display page-title page-title--long">Spatial data scientist and urban planner passionate about understanding how cities work through data.</h1>
+        <h1 className="display page-title page-title--long">Spatial data scientist working in location intelligence and mobility — turning how people move and spend into decisions.</h1>
       </section>
 
       <div className="about-wrap" aria-label="About body">
@@ -35,16 +35,16 @@ export default function About() {
 
           <img
             className="figimg r-3-2 about-prose-fig"
-            src={`${import.meta.env.BASE_URL}images/projects/aboutme/DSC_9295.jpg`}
-            alt="Nadia Cabrera Salazar trail running in the mountains"
+            src={`${import.meta.env.BASE_URL}images/projects/aboutme/about-1.jpg`}
+            alt="Emily Deeb"
           />
         </div>
 
         <aside className="about-side">
           <img
             className="figimg r-3-4 about-portrait"
-            src={`${import.meta.env.BASE_URL}images/projects/aboutme/FotoNadia_sat.png`}
-            alt="Portrait of Nadia Cabrera Salazar"
+            src={`${import.meta.env.BASE_URL}images/projects/aboutme/portrait.png`}
+            alt="Portrait of Emily Deeb"
           />
           <dl className="facts" aria-label="At a glance">
             {about.facts.map((f) => (
